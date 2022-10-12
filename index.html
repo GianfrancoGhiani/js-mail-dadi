@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Mail e Dadi</title>
 </head>
-<body>
-    <div class="m-auto row row-cols-2 my-5 w-25 align-items-center justify-content-between">
-        <input type="email" name="mail" id="mail" placeholder="Inserisci il tuo indirizzo email qui" value="" class="col w-75 px-4 py-1 rounded-pill my-3">
-        <button class="col-2 btn rounded-pill border-1 border-dark ">Send</button>
+<body class="container-fluid">
+    <div class="m-auto row my-5 w-50 align-items-center justify-content-between">
+        <input type="email" name="mail" id="mail" placeholder="Inserisci il tuo indirizzo email qui" value="" class="offset-1 col-8 w-75 px-4 py-1 rounded-pill my-3">
+        <button class="col-1 btn rounded-pill border-1 border-dark ">Invia</button>
     </div>
-    <div class="w-50 m-auto row">
-        
+    <button id="roll" class="btn border-secondary d-block m-auto">Tira i Dadi</button>
+    <div id="dices" class="w-50 m-auto row row-cols-3 align-items-center justify-content-between">
+        <div id="dice1" class="col-3"></div>
+        <div id="dice2" class="col-3 offset-2"></div>
     </div>
-
+    
 
     <script src="./js/script.js"></script>
 </body>
